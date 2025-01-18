@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Materi Kuliah</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f692328cd0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2NjZtZZ4xT1N6z6fWl5Gq0x8+kTQ4wzK6m9l4Z+e5z4f5Z6RZnGJr5e5nQ4zG+5c1/Ju4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <div id="header"></div>
+
+    <div class="flex flex-row">
+        <nav class="bg-gray-200 w-64 min-h-screen p-4">
+            <ul class="space-y-4">
+                <li><a href="index.html" class="flex items-center p-2 hover:bg-gray-300 rounded"><i class="fas fa-home mr-2"></i>Home</a></li>
+                <li><a href="semester_matkul.html" class="flex items-center p-2 hover:bg-gray-300 rounded"><i class="fas fa-book mr-2"></i>Arsip Materi Kuliah</a></li>
+                <li><a href="projek_magang.html" class="flex items-center p-2 hover:bg-gray-300 rounded"><i class="fas fa-briefcase mr-2"></i>Projek Magang</a></li>
+                <li><a href="jurnal.html" class="flex items-center p-2 hover:bg-gray-300 rounded"><i class="fas fa-newspaper mr-2"></i>Jurnal/Artikel</a></li>
+            </ul>
+        </nav>
+
+        <main class="flex-1 p-4">
+            <section id="semesters" class="my-4">
+                <h2 class="text-2xl font-semibold mb-2">Semester Materi Kuliah</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Semester Grid -->
+                    <div onclick="openModal('https://drive.google.com/drive/folders/SEMESTER_1_LINK')" class="flex items-center justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Semester 1</h3>
+                            <p>Materi semester 1</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-blue-500"></i>
+                    </div>
+                    <div onclick="openModal('https://drive.google.com/drive/folders/1zMNjg7t6sEc_8rTzOeL14glrfQtdVkmd?usp=sharing')" class="flex items-center justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Semester 2</h3>
+                            <p>Materi semester 2</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-blue-500"></i>
+                    </div>
+                    <div onclick="openModal('https://drive.google.com/drive/folders/SEMESTER_3_LINK')" class="flex items-center justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Semester 3</h3>
+                            <p>Materi semester 3</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-blue-500"></i>
+                    </div>
+                    <div onclick="openModal('https://drive.google.com/drive/folders/SEMESTER_4_LINK')" class="flex items-center justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Semester 4</h3>
+                            <p>Materi semester 4</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-blue-500"></i>
+                    </div>
+                    <div onclick="openModal('https://drive.google.com/drive/folders/SEMESTER_5_LINK')" class="flex items-center justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Semester 5</h3>
+                            <p>Materi semester 5</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-blue-500"></i>
+                    </div>
+                    <div onclick="openModal('https://drive.google.com/drive/folders/SEMESTER_6_LINK')" class="flex items-center justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Semester 6</h3>
+                            <p>Materi semester 6</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-blue-500"></i>
+                    </div>
+                    <div onclick="openModal('https://drive.google.com/drive/folders/SEMESTER_7_LINK')" class="flex items-center justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Semester 7</h3>
+                            <p>Materi semester 7</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-blue-500"></i>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- Modal -->
+    <div id="accessCodeModal" class="fixed inset-0 bg-black bg-opacity-50 hidden">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-80">
+                <h2 class="text-2xl font-semibold mb-4">Masukkan Kode Akses</h2>
+                <input type="password" id="accessCodeInput" class="border p-2 w-full mb-4" placeholder="Kode Akses">
+                <button onclick="verifyAccessCode()" class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+                <button onclick="closeModal()" class="bg-gray-500 text-white px-4 py-2 rounded ml-2">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="errorModal" class="fixed inset-0 bg-black bg-opacity-50 hidden">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
+                <h2 class="text-2xl font-semibold mb-4 text-red-500">Kode Akses Salah</h2>
+                <button onclick="closeErrorModal()" class="bg-gray-500 text-white px-4 py-2 rounded">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 hidden">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
+                <i class="fas fa-check-circle text-green-500 text-4xl mb-4"></i>
+                <h2 class="text-2xl font-semibold mb-4">Kode Akses Benar</h2>
+                <button onclick="closeSuccessModal()" class="bg-blue-500 text-white px-4 py-2 rounded">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

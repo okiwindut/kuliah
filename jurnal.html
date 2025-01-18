@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal/Artikel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f692328cd0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2NjZtZZ4xT1N6z6fWl5Gq0x8+kTQ4wzK6m9l4Z+e5z4f5Z6RZnGJr5e5nQ4zG+5c1/Ju4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <div id="header"></div>
+
+    <div class="flex flex-row">
+        <nav class="bg-gray-200 w-64 min-h-screen p-4">
+            <ul class="space-y-4">
+                <li><a href="index.html" class="flex items-center p-2 hover:bg-gray-300 rounded"><i class="fas fa-home mr-2"></i>Home</a></li>
+                <li><a href="semester_matkul.html" class="flex items-center p-2 hover:bg-gray-300 rounded"><i class="fas fa-book mr-2"></i>Arsip Materi Kuliah</a></li>
+                <li><a href="projek_magang.html" class="flex items-center p-2 hover:bg-gray-300 rounded"><i class="fas fa-briefcase mr-2"></i>Projek Magang</a></li>
+                <li><a href="jurnal.html" class="flex items-center p-2 hover:bg-gray-300 rounded"><i class="fas fa-newspaper mr-2"></i>Jurnal/Artikel</a></li>
+            </ul>
+        </nav>
+
+        <main class="flex-1 p-4">
+            <section id="jurnal" class="my-4">
+                <h2 class="text-2xl font-semibold mb-4">Kumpulan Jurnal, Artikel, dan Karya Akhir</h2>
+                <div class="relative mb-4">
+                    <input type="text" id="searchInput" placeholder="Cari berdasarkan judul..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+                <div id="cardContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Contoh data, ganti dengan data sebenarnya -->
+                    <div class="card flex border border-gray-500 rounded-lg p-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-500 flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 12l5 5l10 -10"></path>
+                        </svg>
+                        <div class="ml-2">
+                            <span class="border-green-dark text-green-dark mb-2 inline-block rounded-full border px-2.5 py-1 text-xs font-medium">Jurnal</span>
+                            <h3 class="card-title font-semibold text-base text-primary tracking-normal">Jurnal 1</h3>
+                            <h4 class="text-sm font-normal text-gray tracking-normal">Subjudul Jurnal 1</h4>
+                            <p class="text-sm font-normal text-gray tracking-normal">Deskripsi singkat jurnal 1.</p>
+                            <a href="https://drive.google.com/file/d/1-example-id/view" class="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full hover:bg-blue-600 transition duration-300 inline-block">Lihat di Google Drive</a>
+                        </div>
+                    </div>
+                    <div class="card flex border border-gray-500 rounded-lg p-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-500 flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 12l5 5l10 -10"></path>
+                        </svg>
+                        <div class="ml-2">
+                            <span class="border-green-dark text-green-dark mb-2 inline-block rounded-full border px-2.5 py-1 text-xs font-medium">Artikel</span>
+                            <h3 class="card-title font-semibold text-base text-primary tracking-normal">Artikel 1</h3>
+                            <h4 class="text-sm font-normal text-gray tracking-normal">Subjudul Artikel 1</h4>
+                            <p class="text-sm font-normal text-gray tracking-normal">Deskripsi singkat artikel 1.</p>
+                            <a href="https://drive.google.com/file/d/2-example-id/view" class="bg-green-500 text-white px-4 py-2 mt-2 rounded-full hover:bg-green-600 transition duration-300 inline-block">Lihat di Google Drive</a>
+                        </div>
+                    </div>
+                    <div class="card flex border border-gray-500 rounded-lg p-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-red-500 flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 12l5 5l10 -10"></path>
+                        </svg>
+                        <div class="ml-2">
+                            <span class="border-green-dark text-green-dark mb-2 inline-block rounded-full border px-2.5 py-1 text-xs font-medium">Karya Akhir</span>
+                            <h3 class="card-title font-semibold text-base text-primary tracking-normal">Karya Akhir 1</h3>
+                            <h4 class="text-sm font-normal text-gray tracking-normal">Subjudul Karya Akhir 1</h4>
+                            <p class="text-sm font-normal text-gray tracking-normal">Deskripsi singkat karya akhir 1.</p>
+                            <a href="https://drive.google.com/file/d/3-example-id/view" class="bg-red-500 text-white px-4 py-2 mt-2 rounded-full hover:bg-red-600 transition duration-300 inline-block">Lihat di Google Drive</a>
+                        </div>
+                    </div>
+                    <!-- Tambahkan lebih banyak data sesuai kebutuhan -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        // Fungsi untuk melakukan pencarian berdasarkan judul
+        document.getElementById('searchInput').addEventListener('input', function() {
+            var input = this.value.toLowerCase();
+            var cards = document.getElementsByClassName('card');
+            for (var i = 0; i < cards.length; i++) {
+                var title = cards[i].getElementsByClassName('card-title')[0].textContent.toLowerCase();
+                if (title.indexOf(input) !== -1) {
+                    cards[i].style.display = '';
+                } else {
+                    cards[i].style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
